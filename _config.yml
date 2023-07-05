@@ -19,21 +19,6 @@ data_edit_url: http://prose.io/#mobosse/data-starter/edit/develop/data/indicator
 metadata_edit_url: http://prose.io/#mobosse/data-starter/edit/develop/meta/[id].md
 # permalink: /news/:year/:month/:day/:title.html
 
-logos:
-  - language: de
-    src: assets/img/de/SDG_logo.png
-    alt: 'Zum Hauptinhalt springen'
-  - language: en
-    src: assets/img/en/SDG_logo.png
-    alt: To main menu
-
-date_formats:
-  - type: standard
-    language: de
-    format: "%d.%m.%Y"
-  - type: standard
-    language: en
-    format: "%b %d, %Y"
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
@@ -100,7 +85,7 @@ collections:
 
 # The list of languages that are translated. The first one is the default.
 languages:
-  - de
+  - es
   - en
 
 # Menu
