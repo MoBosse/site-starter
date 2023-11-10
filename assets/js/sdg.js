@@ -4638,7 +4638,7 @@ function getObservationAttributeFootnoteSymbol(value, context) {
     return value;
   }
   else{
-    return translations.t(value);
+    return context + translations.t(value);
   }
 }
 
