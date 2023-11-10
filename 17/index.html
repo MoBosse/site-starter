@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="de" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://mobosse.github.io/data-starter/en',
+  remoteDataBaseUrl: 'https://mobosse.github.io/data-starter/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -42,7 +42,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'en',
+  language: 'de',
 
   mapColors: {
     "default": [
@@ -118,7 +118,7 @@ var translations = {
 
         
     
-    <title>Goal 17 - Partnerships for the goals - Indicators For The Sustainable Development Goals</title>
+    <title>Ziel 17 - Partnerschaften zur Erreichung der Ziele - general.site_title</title>
     
 
 
@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20231110141033">
+        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20231110142629">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -163,25 +163,25 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-de
 layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Beta-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href=\"mailto:%email_address\">Kommentare</a>.","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari.","internet_explorer_message_title":"This internet browser is no longer supported","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"> Zum Hauptinhalt springen</a>
 <div class="container internet-explorer-message">
     <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
-    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari.</p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Beta-Version</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href="mailto:%email_address">Kommentare</a>.
     
   </div>
 </div>
@@ -191,36 +191,36 @@ layout-goal
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/site-starter/" id="home" aria-label="Go to homepage" title="Go to homepage">
-    <img src="/site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+            <a class="navbar-brand" href="/site-starter/" id="home" aria-label="" title="">
+    <img src="/site-starter/assets/img/SDG_logo.png" alt="Ziele für Nachhaltige Entwicklung - " />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/">Home</a>
+    <a class="nav-link" href="/site-starter/">Start</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/goals">Goals</a>
+    <a class="nav-link" href="/site-starter/goals">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/site-starter/reporting-status">Datenverfügbarkeit</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/news">Updates</a>
+    <a class="nav-link" href="/site-starter/news">menu.updates</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site-starter/faq">FAQ</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/about">About</a>
+    <a class="nav-link" href="/site-starter/about">Über uns</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/site-starter/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Suche</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Suche">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -239,11 +239,11 @@ layout-goal
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      Deutsch
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/site-starter/es/17/">
-              Español
+            <a class="dropdown-item" href="/site-starter/en/17/">
+              English
             </a>
           </li></ul>
   </div>
@@ -253,12 +253,12 @@ layout-goal
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/site-starter/es/17/">
-                Español
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/site-starter/en/17/">
+                English
             </a>
         </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+</div></span><a title="" aria-label=""
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -278,10 +278,10 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item" >
-            <a href="/site-starter/">Home</a>
+            <a href="/site-starter/">Start</a>
         </li>
         <li class="breadcrumb-item" >
-            <a href="/site-starter/goals">Goals</a>
+            <a href="/site-starter/goals">Ziele</a>
         </li>
         
         
@@ -294,12 +294,12 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" id="goal-17" class="goal-icon-image goal-icon-image-" />
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17" id="goal-17" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
                 <h1>
                     
-                        Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development
+                        Umsetzungsmittel stärken und die Globale Partnerschaft für nachhaltige Entwicklung mit neuem Leben erfüllen
                     
                 </h1>
             </div>
@@ -321,7 +321,7 @@ data-event-label="high"
   <div class="container g-0 ">
     <div class="row align-items-end">
       <div class="col">
-        <h2 class="goal-page-heading">Targets and indicators</h2>
+        <h2 class="goal-page-heading"></h2>
       </div>
       
     </div>
@@ -331,11 +331,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.1</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.1</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Strengthen domestic resource mobilization, including through international support to developing countries, to improve domestic capacity for tax and other revenue collection</span>
+            <span class="target-name">Die Mobilisierung einheimischer Ressourcen verstärken, einschließlich durch internationale Unterstützung für die Entwicklungsländer, um die nationalen Kapazitäten zur Erhebung von Steuern und anderen Abgaben zu verbessern</span>
           </div>
           
       </div>
@@ -350,25 +350,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-1-1/">Total government revenue as a proportion of GDP, by source</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-1-1/">Gesamte Staatseinnahmen als Anteil am BIP, nach Quelle</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -390,25 +390,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.1.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.1.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-1-2/">Proportion of domestic budget funded by domestic taxes</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-1-2/">Anteil des Haushaltsbudgets, das durch inländische Steuern finanziert wird</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -426,11 +426,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.2</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.2</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Developed countries to implement fully their official development assistance commitments, including the commitment by many developed countries to achieve the target of 0.7 per cent of gross national income for official development assistance (ODA/GNI) to developing countries and 0.15 to 0.20 per cent of ODA/GNI to least developed countries; ODA providers are encouraged to consider setting a target to provide at least 0.20 per cent of ODA/GNI to least developed countries</span>
+            <span class="target-name">Sicherstellen, dass die entwickelten Länder ihre Zusagen im Bereich der öffentlichen Entwicklungshilfe voll einhalten, einschließlich der von vielen entwickelten Ländern eingegangenen Verpflichtung, die Zielvorgabe von 0,7 Prozent ihres Bruttonationaleinkommens für öffentliche Entwicklungshilfe zugunsten der Entwicklungsländer und 0,15 bis 0,20 Prozent zugunsten der am wenigsten entwickelten Länder zu erreichen; den Gebern öffentlicher Entwicklungshilfe wird nahegelegt, die Bereitstellung von mindestens 0,20&nbsp;Prozent ihres Bruttonationaleinkommens zugunsten der am wenigsten entwickelten Länder als Zielsetzung zu erwägen</span>
           </div>
           
       </div>
@@ -445,25 +445,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-2-1/">Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-2-1/">Öffentliche Nettoentwicklungsausgaben, insgesamt und an am wenigsten entwickelte Länder, als Anteil am Bruttonationaleinkommen (BNE) der Geberländer des Ausschusses für Entwicklungshilfe der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD)</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -481,11 +481,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.3</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.3</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Mobilize additional financial resources for developing countries from multiple sources</span>
+            <span class="target-name">Zusätzliche finanzielle Mittel aus verschiedenen Quellen für die Entwicklungsländer mobilisieren</span>
           </div>
           
       </div>
@@ -500,25 +500,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-3-1/">Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-3-1/">Ausländische Direktinvestitionen, öffentliche Entwicklungszusammenarbeit (ODA) und Süd-Süd-Kooperationen als Anteil am gesamten Haushaltsbudget</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -540,25 +540,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.3.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.3.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-3-2/">Volume of remittances (in United States dollars) as a proportion of total GDP</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-3-2/">Volumen der (Rück-)Überweisungen (in US-Dollar) als Anteil am gesamten BIP</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -576,11 +576,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.4</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.4</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress</span>
+            <span class="target-name">Den Entwicklungsländern dabei behilflich sein, durch eine koordinierte Politik zur Förderung der Schuldenfinanzierung, der Entschuldung beziehungsweise der Umschuldung die langfristige Tragfähigkeit der Verschuldung zu erreichen, und das Problem der Auslandsverschuldung hochverschuldeter armer Länder angehen, um die Überschuldung zu verringern</span>
           </div>
           
       </div>
@@ -595,25 +595,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.4.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-4-1/">Debt service as a proportion of exports of goods and services</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-4-1/">Schuldendienst als Anteil an Güter- und Dienstleistungsexporten</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -631,11 +631,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.5</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.5</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Adopt and implement investment promotion regimes for least developed countries</span>
+            <span class="target-name">Investitionsförderungssysteme für die am wenigsten entwickelten Länder beschließen und umsetzen</span>
           </div>
           
       </div>
@@ -650,25 +650,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.5.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.5.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-5-1/">Number of countries that adopt and implement investment promotion regimes for developing countries, including the least developed countries</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-5-1/">Anzahl der Staaten, die Investitionsförderprogramme für die am wenigsten entwickelten Länder einführen und umsetzen</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -686,11 +686,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.6</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.6</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</span>
+            <span class="target-name">Die regionale und internationale Nord-Süd- und Süd-Süd-Zusammenarbeit und Dreieckskooperation im Bereich Wissenschaft, Technologie und Innovation und den Zugang dazu verbessern und den Austausch von Wissen zu einvernehmlich festgelegten Bedingungen verstärken, unter anderem durch eine bessere Abstimmung zwischen den vorhandenen Mechanismen, insbesondere auf Ebene der Vereinten Nationen, und durch einen globalen Mechanismus zur Technologieförderung</span>
           </div>
           
       </div>
@@ -705,25 +705,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.6.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.6.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-6-1/">Fixed Internet broadband subscriptions per 100 inhabitants, by speed</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-6-1/">Anzahl der Vereinbarungen und Programme über Wissenschafts- und/oder Technologie-Kooperationen zwischen Staaten, nach Art der Kooperation</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -741,11 +741,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.7</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.7</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote the development, transfer, dissemination and diffusion of environmentally sound technologies to developing countries on favourable terms, including on concessional and preferential terms, as mutually agreed</span>
+            <span class="target-name">Die Entwicklung, den Transfer, die Verbreitung und die Diffusion von umweltverträglichen Technologien an die Entwicklungsländer zu gegenseitig vereinbarten günstigen Bedingungen, einschließlich Konzessions- und Vorzugsbedingungen, fördern</span>
           </div>
           
       </div>
@@ -760,25 +760,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.7.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.7.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-7-1/">Total amount of funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-7-1/">Gesamtbetrag der für Entwicklungsländer genehmigten Mittel zur Förderung der Entwicklung, des Transfers, der öffentlichen Bereitstellung und der Verbreitung umweltfreundlicher Technologien</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -796,11 +796,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.8</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.8</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Fully operationalize the technology bank and science, technology and innovation capacity-building mechanism for least developed countries by 2017 and enhance the use of enabling technology, in particular information and communications technology</span>
+            <span class="target-name">Die Technologiebank und den Mechanismus zum Kapazitätsaufbau für Wissenschaft, Technologie und Innovation für die am wenigsten entwickelten Länder bis 2017 vollständig operationalisieren und die Nutzung von Grundlagentechnologien, insbesondere der Informations- und Kommunikationstechnologien, verbessern</span>
           </div>
           
       </div>
@@ -815,25 +815,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.8.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.8.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-8-1/">Proportion of individuals using the Internet</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-8-1/">Anteil der Einzelpersonen, die das Internet nutzen</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -851,11 +851,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.9</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.9</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance international support for implementing effective and targeted capacity-building in developing countries to support national plans to implement all the Sustainable Development Goals, including through North-South, South-South and triangular cooperation</span>
+            <span class="target-name">Die internationale Unterstützung für die Durchführung eines effektiven und gezielten Kapazitätsaufbaus in den Entwicklungsländern verstärken, um die nationalen Pläne zur Umsetzung aller Ziele für nachhaltige Entwicklung zu unterstützen, namentlich im Rahmen der Nord-Süd- und Süd-Süd-Zusammenarbeit und der Dreieckskooperation</span>
           </div>
           
       </div>
@@ -870,25 +870,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.9.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.9.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-9-1/">Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-9-1/">Dollar-Wert der finanziellen und technischen Zusammenarbeit (einschließlich durch Nord-Süd-, Süd-Süd- und Dreieckskooperationen) mit Entwicklungsländern</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -906,11 +906,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.10</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.10</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote a universal, rules-based, open, non‐discriminatory and equitable multilateral trading system under the World Trade Organization, including through the conclusion of negotiations under its Doha Development Agenda</span>
+            <span class="target-name">Ein universales, regelgestütztes, offenes, nichtdiskriminierendes und gerechtes multilaterales Handelssystem unter dem Dach der Welthandelsorganisation fördern, insbesondere durch den Abschluss der Verhandlungen im Rahmen ihrer E<small>NTWICKLUNGSAGENDA VON</small> D<small>OHA</small></span>
           </div>
           
       </div>
@@ -925,25 +925,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.10.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.10.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-10-1/">Worldwide weighted tariff-average</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-10-1/">Weltweit gewichtete durchschnittliche Einfuhrzollsätze</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -961,11 +961,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.11</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.11</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Significantly increase the exports of developing countries, in particular with a view to doubling the least developed countries’ share of global exports by 2020</span>
+            <span class="target-name">Die Exporte der Entwicklungsländer deutlich erhöhen, insbesondere mit Blick darauf, den Anteil der am wenigsten entwickelten Länder an den weltweiten Exporten bis 2020 zu verdoppeln</span>
           </div>
           
       </div>
@@ -980,25 +980,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.11.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.11.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-11-1/">Developing countries’ and least developed countries’ share of global exports</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-11-1/">Anteil der Entwicklungsländer und der am wenigsten entwickelten Länder an den weltweiten Exporten</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1016,11 +1016,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.12</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.12</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Realize timely implementation of duty-free and quota-free market access on a lasting basis for all least developed countries, consistent with World Trade Organization decisions, including by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent and simple, and contribute to facilitating market access</span>
+            <span class="target-name">Die rasche Umsetzung des zoll- und kontingentfreien Marktzugangs auf dauerhafter Grundlage für alle am wenigsten entwickelten Länder im Einklang mit den Beschlüssen der Welthandelsorganisation erreichen, unter anderem indem sichergestellt wird, dass die für Importe aus den am wenigsten entwickelten Ländern geltenden präferenziellen Ursprungsregeln transparent und einfach sind und zur Erleichterung des Marktzugangs beitragen</span>
           </div>
           
       </div>
@@ -1035,25 +1035,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.12.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.12.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-12-1/">Weighted average tariffs faced by developing countries, least developed countries and small island developing States</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-12-1/">Durchschnittliche Importzölle für Entwicklungsländer, am wenigsten entwickelte Länder und kleine Inselentwicklungsländer</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1071,11 +1071,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.13</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.13</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance global macroeconomic stability, including through policy coordination and policy coherence</span>
+            <span class="target-name">Die globale makroökonomische Stabilität verbessern, namentlich durch Politikkoordinierung und Politikkohärenz</span>
           </div>
           
       </div>
@@ -1090,25 +1090,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.13.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.13.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-13-1/">Macroeconomic Dashboard</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-13-1/">Makroökonomisches Dashboard</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1126,11 +1126,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.14</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.14</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance policy coherence for sustainable development</span>
+            <span class="target-name">Die Politikkohärenz zugunsten nachhaltiger Entwicklung verbessern</span>
           </div>
           
       </div>
@@ -1145,25 +1145,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.14.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.14.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-14-1/">Number of countries with mechanisms in place to enhance policy coherence of sustainable development</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-14-1/">Anzahl der Staaten mit Mechanismen zur Verbesserung der Politikkohärenz bezogen auf nachhaltige Entwicklung</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1181,11 +1181,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.15</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.15</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Respect each country’s policy space and leadership to establish and implement policies for poverty eradication and sustainable development</span>
+            <span class="target-name">Den politischen Spielraum und die Führungsrolle jedes Landes bei der Festlegung und Umsetzung von Politiken zur Armutsbeseitigung und für nachhaltige Entwicklung respektieren</span>
           </div>
           
       </div>
@@ -1200,25 +1200,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.15.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.15.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-15-1/">Extent of use of country-owned results frameworks and planning tools by providers of development cooperation</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-15-1/">Umfang der Nutzung ländereigener Ergebnisrahmenwerke und Planungsinstrumente durch Geber von Entwicklungszusammenarbeit</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1236,11 +1236,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.16</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.16</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance the Global Partnership for Sustainable Development, complemented by multi-stakeholder partnerships that mobilize and share knowledge, expertise, technology and financial resources, to support the achievement of the Sustainable Development Goals in all countries, in particular developing countries</span>
+            <span class="target-name">Die Globale Partnerschaft für nachhaltige Entwicklung ausbauen, ergänzt durch Multi-Akteur-Partnerschaften zur Mobilisierung und zum Austausch von Wissen, Fachkenntnissen, Technologie und finanziellen Ressourcen, um die Erreichung der Ziele für nachhaltige Entwicklung in allen Ländern und insbesondere in den Entwicklungsländern zu unterstützen</span>
           </div>
           
       </div>
@@ -1255,25 +1255,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.16.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.16.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-16-1/">Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-16-1/">Anzahl der Staaten, die Fortschritte bei der Kontrolle der Multi-Stakeholder-Entwicklungswirksamkeit, die das Erreichen der Ziele für nachhaltige Entwicklung unterstützen, berichten</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1291,11 +1291,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.17</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.17</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Encourage and promote effective public, public-private and civil society partnerships, building on the experience and resourcing strategies of partnerships</span>
+            <span class="target-name">Die Bildung wirksamer öffentlicher, öffentlich-privater und zivilgesellschaftlicher Partnerschaften aufbauend auf den Erfahrungen und Mittelbeschaffungsstrategien bestehender Partnerschaften unterstützen und fördern</span>
           </div>
           
       </div>
@@ -1310,25 +1310,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.17.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.17.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-17-1/">Amount in United States dollars committed to public-private partnerships for infrastructure</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-17-1/">Betrag an US-Dollar, der für (a) öffentlich-private Partnerschaften und (b) zivilgesellschaftliche Partnerschaften zugesagt wurde</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1346,11 +1346,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.18</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.18</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts</span>
+            <span class="target-name">Bis 2020 die Unterstützung des Kapazitätsaufbaus für die Entwicklungsländer und namentlich die am wenigsten entwickelten Länder und die kleinen Inselentwicklungsländer erhöhen, mit dem Ziel, über erheblich mehr hochwertige, aktuelle und verlässliche Daten zu verfügen, die nach Einkommen, Geschlecht, Alter, Rasse, Ethnizität, Migrationsstatus, Behinderung, geografischer Lage und sonstigen im nationalen Kontext relevanten Merkmalen aufgeschlüsselt sind</span>
           </div>
           
       </div>
@@ -1365,25 +1365,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.18.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.18.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-18-1/">Statistical capacity indicator for Sustainable Development Goal monitoring</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-18-1/">Anteil der Nachhaltigkeitsindikatoren, die auf nationaler Ebene vollständig - sofern gemäß dem Unterziel relevant - disaggregiert sind, in Übereinstimmung mit den Grundprinzipien der amtlichen Statistik</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1405,25 +1405,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.18.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.18.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-18-2/">Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-18-2/">Anzahl der Staaten mit einer nationalen statistischen Gesetzgebung im Einklang mit den Grundprinzipien der amtlichen Statistik</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1445,25 +1445,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.18.3</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.18.3</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-18-3/">Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-18-3/">Anzahl der Staaten mit einem nationalen statistischen Plan, der vollständig finanziert ist und umgesetzt wird, nach Quelle der Finanzierung</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1481,11 +1481,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 17.19</span>
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 17.19</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, build on existing initiatives to develop measurements of progress on sustainable development that complement gross domestic product, and support statistical capacity-building in developing countries</span>
+            <span class="target-name">Bis 2030 auf den bestehenden Initiativen aufbauen, um Fortschrittsmaße für nachhaltige Entwicklung zu erarbeiten, die das Bruttoinlandsprodukt ergänzen, und den Aufbau der statistischen Kapazitäten der Entwicklungsländer unterstützen</span>
           </div>
           
       </div>
@@ -1500,25 +1500,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.19.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.19.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-19-1/">Dollar value of all resources made available to strengthen statistical capacity in developing countries</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-19-1/">Dollar-Wert aller zur Verfügung gestellten Ressourcen zur Stärkung der statistischen Kapazität in Entwicklungsländern</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1540,25 +1540,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 17.19.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 17.19.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/17-19-2/">Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration</a></span>
+              <span class="indicator-name"><a href="/site-starter/17-19-2/">Anteil der Staaten, die (a) in den letzten 10 Jahren mindestens eine Bevölkerungs- und Wohnungszählung durchgeführt haben und (b) 100% bei der Geburtenregistrierung sowie 80% bei der Registrierung der Sterbefälle erreicht haben</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">No data available</span>
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -1573,7 +1573,7 @@ data-event-label="high"
         <hr class="goal-page-target-rule" />
     
   </div>
-  <a href="#top">Back to top</a>
+  <a href="#top"></a>
 </div>
 
 
@@ -1584,21 +1584,21 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Seite basiert auf Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/site-starter/contact-us">Contact us</a>
+                            <a href="/site-starter/contact-us">Kontakt</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@destatis</a></a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">general.facebook</a>
                             
                         </li>
                         <li>
@@ -1639,17 +1639,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = '';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Suche';</script>
 
-<script src='/site-starter/assets/js/sdg.js?v=20231110141033'></script>
+<script src='/site-starter/assets/js/sdg.js?v=20231110142629'></script>
 
 
     
     
-    <script src="/site-starter/assets/js/custom.js?v=20231110141033"></script><script>
+    <script src="/site-starter/assets/js/custom.js?v=20231110142629"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

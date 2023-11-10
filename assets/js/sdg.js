@@ -4629,15 +4629,16 @@ function alterDataDisplay(value, info, context, additionalInfo) {
 /**
  * Convert a number into a string for observation atttribute footnotes.
  *
- * @param {int} num
+ * @param {string} value
+ * @param {string} context
  * @returns {string} Number converted into unicode character for footnotes.
  */
 function getObservationAttributeFootnoteSymbol(value, context) {
-  if (context === 'chart tooltip' or context === 'table cell'){
+  if (context === 'chart tooltip' || context === 'table cell') {
     return value;
   }
   else{
-    return  translations.t(value);
+    return translations.t(value);
   }
 }
 
