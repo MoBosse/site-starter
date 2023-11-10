@@ -4633,7 +4633,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
  * @returns {string} Number converted into unicode character for footnotes.
  */
 function getObservationAttributeFootnoteSymbol(num) {
-    return '[' + translations.indicator.note + ' ' + (num + 1) + ']';
+    return '[Test ' + (num + 1) + ']';
 }
 
   /**
