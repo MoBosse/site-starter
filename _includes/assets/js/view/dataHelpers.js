@@ -73,7 +73,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
  * @returns {string} Number converted into unicode character for footnotes.
  */
 function getObservationAttributeFootnoteSymbol(value, context) {
-  if (context === 'chart tooltip' || context === 'table cell') {
+  if (context === 'chart tooltip') {
     return value;
   }
   else{
