@@ -77,6 +77,6 @@ function getObservationAttributeFootnoteSymbol(value, context) {
     return &euro; + value;
   }
   else{
-    return '<small> ' + translations.t(value) + '</small>';
+    return  translations.t(value);
   }
 }
