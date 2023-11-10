@@ -74,7 +74,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
  */
 function getObservationAttributeFootnoteSymbol(value, context) {
   if (context === 'chart tooltip' or context === 'table cell'){
-    return &euro; + value;
+    return value;
   }
   else{
     return  translations.t(value);
