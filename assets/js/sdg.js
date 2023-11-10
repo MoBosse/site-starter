@@ -4629,7 +4629,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
 /**
  * Convert a number into a string for observation atttribute footnotes.
  *
- * @param {int} num 
+ * @param {int} num
  * @returns {string} Number converted into unicode character for footnotes.
  */
 function getObservationAttributeFootnoteSymbol(num) {
