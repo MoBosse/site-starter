@@ -73,5 +73,5 @@ function alterDataDisplay(value, info, context, additionalInfo) {
  * @returns {string} Number converted into unicode character for footnotes.
  */
 function getObservationAttributeFootnoteSymbol(attributeValue) {
-    return '[Test ' + attributeValue + ']';
+    return '<small> ' + attributeValue + '</small>';
 }
