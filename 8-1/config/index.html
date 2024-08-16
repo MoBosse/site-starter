@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://DnsTestEnvironment.github.io/dns-data/de',
+  remoteDataBaseUrl: 'https://DnsTestEnvironment.github.io/dns-data_1/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20240816133458">
+        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20240816143436">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -579,7 +579,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_annotations', [{"value":160,"label":{"content":"Ziel 2030","position":"left","backgroundColor":"transparent","color":"transparent"},"preset":"target_line","borderColor":"transparent"}]);
+        var currentValue = normalizeCurrentValue('graph_annotations', [{"units":"2000 = 100","value":160,"label":{"content":"Ziel 2030","position":"left","backgroundColor":"transparent","color":"transparent"},"preset":"target_line","borderColor":"transparent"}]);
         var propertyEditor = editor.getEditor('root.graph_annotations');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -593,7 +593,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_limits', [{"maximum":200.0}]);
+        var currentValue = normalizeCurrentValue('graph_limits', [{"unit":"2000 = 100","maximum":200.0},{"unit":"Millionen Tonnen","maximum":3000}]);
         var propertyEditor = editor.getEditor('root.graph_limits');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -607,6 +607,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_series_breaks'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_stacked_disaggregation', "Rohstoffkategorie");
+        var propertyEditor = editor.getEditor('root.graph_stacked_disaggregation');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_stacked_disaggregation');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_stacked_disaggregation'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_target_lines'));
@@ -689,7 +701,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "\n\n<div>\n  <div class=\"my-header\">\n    <label class=\"default\">Gesamtrohstoffproduktivität: Beibehaltung des Trends der Jahre 2000&nbsp;- 2010&nbsp;bis 2030\n      <a href=\"https://dnsTestEnvironment.github.io/dns-indicators/status\"><img src=\"https://sdg-indikatoren.de/public/Wettersymbole/Wolke.png\" title=\"Der Indikator entwickelte sich in 2018 zwar in die gewünschte Richtung auf das Ziel zu, bei Fortsetzung der Entwicklung wäre das Ziel im Zieljahr aber um mehr als 20 % der Differenz zwischen Zielwert und dem Wert aus 2018 verfehlt worden.\" alt=\"Wettersymbol: Wolke\"/>\n      </a>\n    </label>\n  </div>\n</div>\n<div class=\"my-header-note\">\n  <label class=\"default\"><b>(Bewertung aus dem Indikatorenbericht 2022, bezogen auf das Berichtsjahr 2018)\n  </b></label>\n</div>");
+        var currentValue = normalizeCurrentValue('page_content', "\n\n<div>\n  <div class=\"my-header\">\n    <label class=\"default\">Gesamtrohstoffproduktivität: Beibehaltung des Trends der Jahre 2000&nbsp;- 2010&nbsp;bis 2030\n      <a href=\"https://dnsTestEnvironment.github.io/dns-indicators/status\"><img src=\"https://sdg-indikatoren.de/public/Wettersymbole/Wolke.png\" title=\"Der Indikator entwickelte sich in 2018 zwar in die gewünschte Richtung auf das Ziel zu, bei Fortsetzung der Entwicklung wäre das Ziel im Zieljahr aber um mehr als 20 % der Differenz zwischen Zielwert und dem Wert aus 2018 verfehlt worden.\" alt=\"Wettersymbol: Wolke\"/>\n      </a>\n    </label>\n  </div>\n</div>\n<div class=\"my-header-note\">\n  <label class=\"default\"><b>(Bewertung aus dem Indikatorenbericht 2022, bezogen auf das Berichtsjahr 2018)\n  </b></label>\n</div>\n");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -890,12 +902,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site-starter/assets/js/sdg.js?v=20240816133458'></script>
+<script src='/site-starter/assets/js/sdg.js?v=20240816143436'></script>
 
 
     
     
-    <script src="/site-starter/assets/js/custom.js?v=20240816133458"></script><script>
+    <script src="/site-starter/assets/js/custom.js?v=20240816143436"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
