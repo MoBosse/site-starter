@@ -128,7 +128,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
     this.startValues = options.startValues;
-    this.configObsAttributes = [{"field":"COMMENT_OBS","label":""}];
+    this.configObsAttributes = [];
     this.allObservationAttributes = options.allObservationAttributes;
     this._browserDecimalSeparator = this.viewHelpers.getBrowserDecimalSeparator();
 
@@ -1372,7 +1372,7 @@ function nonFieldColumns() {
       columns.push(tsAttribute.field);
     });
   }
-  var observationAttributes = [{"field":"COMMENT_OBS","label":""}];
+  var observationAttributes = [];
   if (observationAttributes && observationAttributes.length > 0) {
     observationAttributes.forEach(function(oAttribute) {
       columns.push(oAttribute.field);
@@ -2574,7 +2574,7 @@ function prepareDataForDataset(years, rows, allObservationAttributes) {
     data: [],
     observationAttributes: [],
   };
-  var configObsAttributes = [{"field":"COMMENT_OBS","label":""}];
+  var configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -2803,7 +2803,7 @@ function inputEdges(edges) {
       return true;
     });
   }
-  var configuredObservationAttributes = [{"field":"COMMENT_OBS","label":""}];
+  var configuredObservationAttributes = [];
   if (configuredObservationAttributes && configuredObservationAttributes.length > 0) {
     configuredObservationAttributesFlat = configuredObservationAttributes.map(function(att) { return att.field; });
     edgesData = edgesData.filter(function(edge) {
@@ -2847,7 +2847,7 @@ function getAllObservationAttributes(rows) {
   }
   var obsAttributeHash = {},
       footnoteNumber = 0,
-      configObsAttributes = [{"field":"COMMENT_OBS","label":""}];
+      configObsAttributes = [];
   if (configObsAttributes && configObsAttributes.length > 0) {
     configObsAttributes = configObsAttributes.map(function(obsAtt) {
       return obsAtt.field;
@@ -3318,7 +3318,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":""}},
       mapLayers: [],
       precision: precision,
       precisionItems: precisionItems,
@@ -3465,7 +3465,7 @@ function updateObservationAttributes(obsAttributes) {
  * Gets the text of an observation attribute for display to the end user.
  */
 function getObservationAttributeText(obsAttribute) {
-    var configuredObsAttributes = [{"field":"COMMENT_OBS","label":""}];
+    var configuredObsAttributes = [];
     var attributeConfig = _.find(configuredObsAttributes, function(configuredObsAttribute) {
         return configuredObsAttribute.field === obsAttribute.field;
     });
