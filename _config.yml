@@ -38,9 +38,9 @@ exclude:
   - README.md
   - LICENSE
 
-observation_attributes:
-  - field: COMMENT_OBS
-    label: ''
+observation_attributes: 
+  - field: COMMENT_OBS 
+    label: '
 
 map_options:
   disaggregation_controls: true
