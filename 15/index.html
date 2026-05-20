@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://DnsTestEnvironment.github.io/dns-data_1/de',
+  remoteDataBaseUrl: 'https://mobosse.github.io/data-starter/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20240816143436">
+        <link rel="stylesheet" href="/site-starter/assets/css/style.css?v=20260520114003">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -169,7 +169,7 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha-Version","beta":"Beta-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari.","internet_explorer_message_title":"Dieser Internet-Browser wird nicht mehr unterstützt","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
+<script>translations['header'] = {"alpha":"Beta-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari.","internet_explorer_message_title":"Dieser Internet-Browser wird nicht mehr unterstützt","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"> Zum Hauptinhalt springen</a>
 <div class="container internet-explorer-message">
@@ -180,7 +180,7 @@ layout-goal
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha-Version</strong>
+    <strong class="phase-tag">Beta-Version</strong>
     
     Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href="mailto:test@example.com">Kommentare</a>.
     
@@ -205,11 +205,11 @@ layout-goal
 </li><li class="nav-item ">
     <a class="nav-link" href="/site-starter/goals">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/reporting-status">Berichtsstatus</a>
+    <a class="nav-link" href="/site-starter/reporting-status">Datenverfügbarkeit</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site-starter/news">menu.updates</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site-starter/faq">menu.faq</a>
+    <a class="nav-link" href="/site-starter/faq">FAQ</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site-starter/about">Über uns</a>
 </li></ul>
@@ -336,7 +336,7 @@ data-event-label="high"
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Artenvielfalt und Landschaftsqualität</span>
+            <span class="target-name">Bis 2020 im Einklang mit den Verpflichtungen aus internationalen Übereinkünften die Erhaltung, Wiederherstellung und nachhaltige Nutzung der Land- und Binnensüßwasser-Ökosysteme und ihrer Dienstleistungen, insbesondere der Wälder, der Feuchtgebiete, der Berge und der Trockengebiete, gewährleisten</span>
           </div>
           
       </div>
@@ -351,12 +351,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/15-1/">Artenvielfalt und Landschaftsqualität</a></span>
+              <span class="indicator-name"><a href="/site-starter/15-1-1/">Waldfläche im Verhältnis zur gesamten Landfläche</a></span>
               
 
 
@@ -368,8 +368,48 @@ data-event-label="high"
 
 
 
-<span class="status complete">
-    <span class="status-inner">Daten verfügbar</span>
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.1.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-1-2/">Von Schutzgebieten erfasster Anteil der für die biologische Vielfalt der Land- und Süßwasserökosysteme bedeutsamen Gebiete, nach Art des Ökosystems</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -391,7 +431,7 @@ data-event-label="high"
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Eutrophierung der Ökosysteme</span>
+            <span class="target-name">Bis 2020 die nachhaltige Bewirtschaftung aller Waldarten fördern, die Entwaldung beenden, geschädigte Wälder wiederherstellen und die Aufforstung und Wiederaufforstung weltweit beträchtlich erhöhen</span>
           </div>
           
       </div>
@@ -406,12 +446,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/15-2/">Eutrophierung der Ökosysteme</a></span>
+              <span class="indicator-name"><a href="/site-starter/15-2-1/">Fortschritt bei der nachhaltigen Waldbewirtschaftung</a></span>
               
 
 
@@ -423,8 +463,8 @@ data-event-label="high"
 
 
 
-<span class="status complete">
-    <span class="status-inner">Daten verfügbar</span>
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -446,7 +486,7 @@ data-event-label="high"
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.15-3-title</span>
+            <span class="target-name">Bis 2030 die Wüstenbildung bekämpfen, die degradierten Flächen und Böden einschließlich der von Wüstenbildung, Dürre und Überschwemmungen betroffenen Flächen sanieren und eine bodendegradationsneutrale Welt anstreben</span>
           </div>
           
       </div>
@@ -461,12 +501,12 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.3.ab</span>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site-starter/15-3-ab/">Erhalt bzw. Wiederaufbau von Wäldern unter REDD+ sowie internationaler Bodenschutz</a></span>
+              <span class="indicator-name"><a href="/site-starter/15-3-1/">Anteil der degradierten Fläche an der gesamten Landfläche</a></span>
               
 
 
@@ -478,8 +518,543 @@ data-event-label="high"
 
 
 
-<span class="status complete">
-    <span class="status-inner">Daten verfügbar</span>
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Bis 2030 die Erhaltung der Bergökosysteme einschließlich ihrer biologischen Vielfalt sicherstellen, um ihre Fähigkeit zur Erbringung wesentlichen Nutzens für die nachhaltige Entwicklung zu stärken</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.4.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-4-1/">Von Schutzgebieten erfasster Anteil der für die biologische Vielfalt bedeutsamen Gebiete in den Bergen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.4.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-4-2/">a) Index der Grünbedeckung in Gebirgen und b) Anteil der degradierten Gebirgsfläche</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Umgehende und bedeutende Maßnahmen ergreifen, um die Verschlechterung der natürlichen Lebensräume zu verringern, dem Verlust der biologischen Vielfalt ein Ende zu setzen und bis 2020 die bedrohten Arten zu schützen und ihr Aussterben zu verhindern</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.5.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-5-1/">Rote-Liste-Index</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.6</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Die gerechte und gleichmäßige Verteilung der sich aus der Nutzung der genetischen Ressourcen ergebenden Vorteile und den angemessenen Zugang zu diesen Ressourcen fördern, wie auf internationaler Ebene vereinbart</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.6.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-6-1/">Anzahl der Staaten, die rechtliche, administrative und politische Rahmenbedingungen geschaffen haben, um Vorteile gerecht und gleichmäßig zu verteilen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.7</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Dringend Maßnahmen ergreifen, um der Wilderei und dem Handel mit geschützten Pflanzen- und Tierarten ein Ende zu setzen und dem Problem des Angebots illegaler Produkte aus wildlebenden Pflanzen und Tieren und der Nachfrage danach zu begegnen</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.7.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-7-1/">Anteil der gehandelten wildlebenden Tiere und Pflanzen, die aus Wilderei oder illegalem Handel stammen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.8</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Bis 2020 Maßnahmen einführen, um das Einbringen invasiver gebietsfremder Arten zu verhindern, ihre Auswirkungen auf die Land- und Wasserökosysteme deutlich zu reduzieren und die prioritären Arten zu kontrollieren oder zu beseitigen</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.8.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-8-1/">Anteil der Staaten, die relevante nationale Rechtsvorschriften verabschiedet haben und angemessene Mittel für die Bekämpfung oder Kontrolle invasiver gebietsfremder Arten bereitstellen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.9</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Bis 2020 Ökosystem- und Biodiversitätswerte in die nationalen und lokalen Planungen, Entwicklungsprozesse, Armutsbekämpfungsstrategien und Gesamtrechnungssysteme einbeziehen</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.9.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-9-1/">a) Anzahl der Staaten, die nationale Zielvorgaben gemäß oder ähnlich dem Aichi-Biodiversitätsziel 2 des Strategieplans für die biologische Vielfalt 2011-2020 in ihre nationalen Strategien und Aktionspläne zugunsten der biologischen Vielfalt aufgenommen haben, und die bei der Umsetzung dieser Zielvorgaben gemeldeten Fortschritte und b) Aufnahme der biologischen Vielfalt in die nationalen Rechnungslegungs- und Berichterstattungssysteme, definiert als die Anwendung des Systems der Umweltökonomischen Gesamtrechnungen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Finanzielle Mittel aus allen Quellen für die Erhaltung und nachhaltige Nutzung der biologischen Vielfalt und der Ökosysteme aufbringen und deutlich erhöhen</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.a.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-a-1/">a) Öffentliche Entwicklungszusammenarbeit (ODA) für die Erhaltung und nachhaltige Nutzung der biologischen Vielfalt und b) Einnahmen und Finanzmittel, die über die für die biologische Vielfalt maßgeblichen Wirtschaftsinstrumente generiert wurden</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Erhebliche Mittel aus allen Quellen und auf allen Ebenen für die Finanzierung einer nachhaltigen Bewirtschaftung der Wälder aufbringen und den Entwicklungsländern geeignete Anreize für den vermehrten Einsatz dieser Bewirtschaftungsform bieten, namentlich zum Zweck der Walderhaltung und Wiederaufforstung</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-b-1/">a) Öffentliche Entwicklungszusammenarbeit (ODA) für die Erhaltung und nachhaltige Nutzung der biologischen Vielfalt und b) Einnahmen und Finanzmittel, die über die für die biologische Vielfalt maßgeblichen Wirtschaftsinstrumente generiert wurden</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Unterziel</span> 15.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Die weltweite Unterstützung von Maßnahmen zur Bekämpfung der Wilderei und des Handels mit geschützten Arten verstärken, unter anderem durch die Stärkung der Fähigkeit lokaler Gemeinwesen, Möglichkeiten einer nachhaltigen Existenzsicherung zu nutzen</span>
+          </div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indikator</span> 15.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/site-starter/15-c-1/">Anteil der gehandelten wildlebenden Tiere und Pflanzen, die aus Wilderei oder illegalem Handel stammen</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
+        <span class="visually-hidden"></span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">status.no_data_available</span>
 </span>
 
 
@@ -566,12 +1141,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site-starter/assets/js/sdg.js?v=20240816143436'></script>
+<script src='/site-starter/assets/js/sdg.js?v=20260520114003'></script>
 
 
     
     
-    <script src="/site-starter/assets/js/custom.js?v=20240816143436"></script><script>
+    <script src="/site-starter/assets/js/custom.js?v=20260520114003"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
