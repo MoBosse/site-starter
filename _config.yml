@@ -40,7 +40,7 @@ exclude:
 
 observation_attributes: 
   - field: COMMENT_OBS 
-    label: '
+    label: ''
 
 map_options:
   disaggregation_controls: true
