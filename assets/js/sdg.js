@@ -4733,7 +4733,11 @@ function alterDataDisplay(value, info, context, additionalInfo) {
             localeOpts.minimumFractionDigits = VIEW._precision;
             localeOpts.maximumFractionDigits = VIEW._precision;
         }
-        altered = altered.toLocaleString(opensdg.language, localeOpts);
+        altered = altered.toLocaleString(opensdg.language_numbers, localeOpts);
+        // Still use the custom decimal separator if it is there.
+        if (OPTIONS.decimalSeparator) {
+            altered = altered.toString().replace(VIEW._browserDecimalSeparator, OPTIONS.decimalSeparator);
+        }
     }
     // Now let's add any footnotes from observation attributes.
     var obsAttributes = [];
@@ -4749,7 +4753,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
     }
     if (obsAttributes.length > 0) {
         var obsAttributeFootnoteNumbers = obsAttributes.map(function(obsAttribute) {
-            return getObservationAttributeFootnoteSymbol(obsAttribute.value, context);
+            return getObservationAttributeFootnoteSymbol(obsAttribute.footnoteNumber);
         });
         altered += ' ' + obsAttributeFootnoteNumbers.join(' ');
     }
@@ -4759,17 +4763,22 @@ function alterDataDisplay(value, info, context, additionalInfo) {
 /**
  * Convert a number into a string for observation atttribute footnotes.
  *
- * @param {string} value
- * @param {string} context
+ * @param {int} num 
  * @returns {string} Number converted into unicode character for footnotes.
  */
-function getObservationAttributeFootnoteSymbol(value, context) {
-  if (context === 'chart tooltip' || context === 'table cell') {
-    return value;
-  }
-  else{
-    return context + translations.t(value);
-  }
+function getObservationAttributeFootnoteSymbol(num) {
+    return '[' + translations.indicator.note + ' ' + (num + 1) + ']';
+}
+
+/**
+ * Figure out what the browser will be using for the decimal separator.
+ *
+ * @returns {string} The decimal separator the browser will use.
+ */
+function getBrowserDecimalSeparator() {
+    var browserDecimal = 1.1;
+    browserDecimal = browserDecimal.toLocaleString(opensdg.language_numbers).substring(1, 2);
+    return browserDecimal;
 }
 
   /**
